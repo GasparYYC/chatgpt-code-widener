@@ -1,0 +1,17 @@
+{
+  "name": "ChatGPT Code Widener",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "ChatGPT Code Widener",
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/*"],
+      "js": ["chatgpt-code-widener.js"],
+      "all_frames": true,
+      "match_origin_as_fallback": false,
+      "match_about_blank": false,
+      "run_at": "document_idle",
+      "world": "ISOLATED"
+    }
+  ]
+}

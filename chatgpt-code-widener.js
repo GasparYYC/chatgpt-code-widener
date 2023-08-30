@@ -1,0 +1,1 @@
+document.styleSheets[0].insertRule('.text-base { max-width: 95% !important; }', 0)
